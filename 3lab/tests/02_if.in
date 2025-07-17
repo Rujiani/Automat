@@ -1,0 +1,10 @@
+số nguyên x;
+x = 7;
+
+nếu x > 3 bắt đầu
+    x = x - 2;
+đuôi
+
+nếu x > 4 bắt đầu
+    x;
+đuôi

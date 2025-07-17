@@ -1,0 +1,12 @@
+số nguyên step;
+
+chu kỳ step = 0:50 bắt đầu
+    nếu *_*=>x < exit_x + 1 && exit_x < *_*=>x + 1 &&
+        *_*=>y < exit_y + 1 && exit_y < *_*=>y + 1 bắt đầu
+            step = 50;
+    đuôi
+
+
+    { v_0; >_<; v_v; };
+    { >_0; >_<; >_>; };
+đuôi

@@ -1,0 +1,9 @@
+số nguyên i;
+số nguyên sum;
+sum = 0;
+
+chu kỳ i = 1:3 bắt đầu
+    sum = sum + i;
+đuôi
+
+sum;

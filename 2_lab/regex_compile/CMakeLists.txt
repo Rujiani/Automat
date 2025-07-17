@@ -1,0 +1,6 @@
+add_library(regexTree INTERFACE regex_tree.hpp)
+add_library(regexToken token.hpp token.cpp)
+add_library(DKA DKA.hpp DKA.cpp)
+target_compile_options(regexTree INTERFACE -g)
+target_compile_options(regexToken PRIVATE -g)
+target_compile_options(DKA PRIVATE -g)

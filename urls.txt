@@ -1,0 +1,2 @@
+https://downloads.sourceforge.net/project/smc/SMC%207.6.0/Examples/C%2B%2B/Example1.zip
+https://downloads.sourceforge.net/project/smc/SMC%207.6.0/Examples/C%2B%2B/Example2.zip

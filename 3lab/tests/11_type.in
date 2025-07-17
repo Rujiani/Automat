@@ -1,0 +1,14 @@
+số nguyên  i;
+sắp hàng arr = {3};
+vuông      cell = { 3 , 4 , thật };
+
+arr[0] = 10;
+arr[1] = 20;
+
+kiểm tra loại { arr[0]  i } ;
+
+kiểm tra loại { cell=>busy  arr[1] } ;
+
+kiểm tra loại { cell  arr[0] } ;
+
+kiểm tra loại { kích thước arr  arr[2] } ;

@@ -1,0 +1,10 @@
+add_compile_definitions(REGEX_ENABLE_TESTS)
+add_executable(regex_tests test.cpp)
+add_executable(tokenTest tokens_test.cpp)
+add_test(Test tokenTest)
+add_test(Test regex_tests)
+target_link_libraries(tokenTest PRIVATE regexToken gtest gtest_main)
+target_link_libraries(regex_tests INTERFACE regexTree)
+target_link_libraries(regex_tests PRIVATE regexToken regex gtest gtest_main DKA)
+target_compile_options(regex_tests PRIVATE -g)
+

@@ -1,0 +1,11 @@
+số nguyên a;
+số nguyên b;
+số nguyên c;
+
+a = 10;
+b = 3;
+c = a + b - 4;
+
+a;
+b;
+c;

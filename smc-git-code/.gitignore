@@ -1,0 +1,18 @@
+# Ignore generated jar files ...
+*.jar
+bin/Smc.jar.FBK
+
+# ... except this one.
+!bin/Smc.jar
+
+.DS_STORE
+
+# Ignore the generated FSM context files.
+*Context.java
+
+lib/statemap.h
+lib/Java/statemap/
+net/sf/smc/net/
+net/sf/smc/generator/net/
+net/sf/smc/model/net/
+net/sf/smc/parser/net/

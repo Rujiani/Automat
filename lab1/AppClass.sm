@@ -1,0 +1,67 @@
+%start Map1::Start  
+%class AppClass  
+%header AppClass.hpp  
+
+%map Map1  
+%%
+Start
+{
+    Digit Title {AddToBuff();}
+    CharFull Title {AddToBuff();}
+}
+Title
+{
+    Digit Title {AddToBuff();}
+    CharFull Title {AddToBuff();}
+    Special1 Title {AddToBuff();}
+    Separator[ctxt.CheckTitle()] Identifier {}
+}
+Identifier
+{
+    Digit Identifier {AddToBuff();}
+    CharFull Identifier {AddToBuff();}
+    Separator[ctxt.CheckIdentifier()] Name {}
+}
+Name
+{
+    CharFull Name {AddToBuff();}
+    Special2 Name {AddToBuff();}
+    Separator [ctxt.checkName()] Size {}
+}
+Size
+{
+    Digit Size {}
+    Separator Hash {}
+}
+Hash
+{
+    Digit Hash {AddToBuff();}
+    CharFull[ctxt.IsCharShortcut()] Hash {AddToBuff();}
+    Separator[ctxt.CheckHash()] LastSep {}
+}
+LastSep
+{
+    Special1[ctxt.isBackslash()] OK {Acceptable();}
+    Special1 Error {Unacceptable();}
+}
+OK
+{}
+Error
+{
+    Unknown nil {}
+    Digit nil {}
+    CharFull nil {}
+    Special1 nil {}
+    Special2 nil {}
+    Separator nil {}
+}
+Default
+{
+    Unknown Error {}
+    Digit Error {}
+    CharFull Error {}
+    Special1 Error {}
+    Special2 Error {}
+    Separator Error {}
+}
+%%

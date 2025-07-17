@@ -1,0 +1,14 @@
+sắp hàng arr = {5};
+số nguyên i;
+số nguyên sum;
+sum = 0;
+
+chu kỳ i = 0:4 bắt đầu
+    arr[i] = i + 1;
+đuôi
+
+chu kỳ i = 0:4 bắt đầu
+    sum = sum + arr[i];
+đuôi
+
+sum;

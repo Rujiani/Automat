@@ -1,0 +1,11 @@
+boolean flag;
+boolean res;
+
+flag = sai;
+res = flag || thật;
+
+nếu res bắt đầu
+    số nguyên x;
+    x = 3;
+    x;
+đuôi

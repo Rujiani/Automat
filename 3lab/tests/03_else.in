@@ -1,0 +1,6 @@
+số nguyên y;
+y = 3;
+nếu y < 2 bắt đầu
+    y = y + 1;
+đuôi
+y;
